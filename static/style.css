@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom, #eb2b0a, #e9ecee);
+}
+
+h1 {
+    font-family: Times New Roman, serif;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 0px 5px 10px rgba(27, 26, 26, 0.5);
+}
+
+#text-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 1.2em;
+    /* text-shadow: 0px 4px 5px rgba(27, 26, 26, 0.5); */
+}
+
+textarea {
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px -8px 14px rgba(27, 26, 26, 0.5);
+    resize: none;
+    font-family: Arial, sans-serif;
+    font-size: 1.1em;
+    color: #555;
+    background-color: transparent;
+    width: 80%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+textarea:focus {
+    color: black;
+}
+
+
+@font-face {
+    font-family: 'FancyFont';
+    src: url('path/to/fancy-font.woff2') format('woff2'),
+         url('path/to/fancy-font.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #20ff02;
+    color: white;
+    font-size: 1.2em;
+    cursor: pointer;
+    font-family: 'FancyFont', Arial, sans-serif;
+    box-shadow: 0px 8px 5px rgba(27, 26, 26, 0.5);
+}
+
+button:hover {
+    background-color: #cc3a00;
+}
+
+
+#prediction-results {
+    margin-top: 50px;
+    background-color: transparent;
+}
+
+.predicted-class {
+    font-weight: bold;
+}
+
+.probability {
+    font-style: italic;
+}
+
+.text {
+    margin-top: 10px;
+}
+
+hr {
+    margin-top: 20px;
+    border: none;
+    border-top: 2px solid #ddd;
+}

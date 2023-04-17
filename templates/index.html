@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Amelia✍🐱‍💻</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Amelia📃💘</h1>
+    <form id="text-form">
+        <label for="text-input"><b>Enter The Abstract:</b></label>
+        <br>
+        <textarea id="text-input" rows="4" cols="50"></textarea>
+        <br>
+        <button type="button" onclick="makePrediction()">Predict</button>
+    </form>
+    <br>
+    <div id="prediction-results"></div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
